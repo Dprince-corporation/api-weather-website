@@ -23,7 +23,7 @@ function getData() {
 
 function displayData(response) {
     console.log(response)
-    if (response.cod === '404') {
+    if (response.code === '404') {
         const err = document.querySelector('.error');
         err.textContent = "Please enter a valid city";
         search.value = "";
